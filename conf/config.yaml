@@ -1,0 +1,17 @@
+data:
+  dataset_path: /genres_original
+  url: "https://github.com/NickKar30/music_gengre_class.git"
+  val_size: 0.4
+  batch_size: 4
+  genres: ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+  num_waves: 10
+
+
+train:
+  learning_rate: 2e-4
+  weight_decay: 0.01
+  max_epochs: 10
+
+
+artifacts:
+  exp_name: example-experiment

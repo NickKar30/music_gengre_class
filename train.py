@@ -23,7 +23,7 @@ def main(cfg: DictConfig):
     loggers = [
         pl.loggers.MLFlowLogger(
             experiment_name=cfg.artifacts.exp_name,
-            tracking_uri="./logs/mlflow",
+            tracking_uri="http://128.0.1.1:8080",
         ),
     ]
 

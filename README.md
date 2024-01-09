@@ -28,7 +28,7 @@ The data for the project are taken from [here](https://www.kaggle.com/datasets/a
 
  - rock
 
-By default, the value of downloading 10 audio files from each genre is set to reduce the data loading time. If necessary, this number can be changed in the settings.
+By default, the value of downloading 5 audio files from each genre is set to reduce the data loading time. If necessary, this number can be changed in the settings.
 
 ## Solution
 As a solution to the problem, a convolutional neural network was used, which was fed with spectrograms - visual representations of audio signals, which show the distribution of frequency components of the signal over time.

@@ -47,6 +47,6 @@ The compressed spectrograms were fed to the input of the convolutional neural ne
   
 - ``Hydra`` for managing project configuration and combining config files
   
-- ``MLflow`` for logging hyperparameters and metrics and saving and loading models
+- ``MLflow`` for logging hyperparameters and metrics 
   
 - ``ONNX`` for storing and distributing models between different frameworks

@@ -37,4 +37,16 @@ The obtained spectrograms were compressed to the size of 100*100 pixels, to spee
 
 The compressed spectrograms were fed to the input of the convolutional neural network, which performed the classification of audio files by genres.
 
+## Dev tools
 
+- ``poetry`` for creating and installing Python packages
+  
+- ``pre-commit`` for checking and formatting code before committing
+  
+- ``DVC`` for versioning data and models and reproducing experiments
+  
+- ``Hydra`` for managing project configuration and combining config files
+  
+- ``MLflow`` for logging hyperparameters and metrics and saving and loading models
+  
+- ``ONNX`` for storing and distributing models between different frameworks

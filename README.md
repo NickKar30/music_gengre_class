@@ -53,10 +53,10 @@ The compressed spectrograms were fed to the input of the convolutional neural ne
 
 ## Project structure
 
-- **data/**: contains .dvc files for train and test sets;
-- **.dvc/**: service files and folders for DVC
-- **conf/**: contains yaml file config with project settings and training hyperparameters models
-- **models/**: содержит .dvc-файл предобученной модели; в нее же сохраняется обученная модель в случае запуска скрипта train.py
-- **music_genre_class**: python package that contains:
-  - **dataset.py**: creation and preprocessing of downloaded audio files
-  - **model.py**: model architecture
+- ``**data/**``: contains .dvc files for train and test sets;
+- ``**.dvc/**``: service files and folders for DVC
+- ``**conf/**``: contains yaml file config with project settings and training hyperparameters models
+- ``**models/**``: содержит .dvc-файл предобученной модели; в нее же сохраняется обученная модель в случае запуска скрипта train.py
+- ``**music_genre_class**``: python package that contains:
+  - ``**dataset.py**``: creation and preprocessing of downloaded audio files
+  - ``**model.py**``: model architecture

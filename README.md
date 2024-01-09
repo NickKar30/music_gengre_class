@@ -1,7 +1,5 @@
 # music_gengre_class
 
-# music_gengre_class
-
 ## Task
 The goal of the project is to classify musical genres into 10 categories, based on the analysis of audio files.
 

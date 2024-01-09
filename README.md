@@ -6,7 +6,7 @@ The goal of the project is to classify musical genres into 10 categories, based 
 ## Data
 The data for the project are taken from [here](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification):
 
- The dataset consists of 1000 audio files of different lengths, 100 of each music genre:
+ The dataset consists of 1000 audio files of different lengths, 100 of 10 music genre:
 
  - blues
 
@@ -36,3 +36,5 @@ As a solution to the problem, a convolutional neural network was used, which was
 The obtained spectrograms were compressed to the size of 100*100 pixels, to speed up the calculations and reduce the memory size. This function can be disabled if higher image quality is required.
 
 The compressed spectrograms were fed to the input of the convolutional neural network, which performed the classification of audio files by genres.
+
+

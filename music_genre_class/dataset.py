@@ -90,7 +90,7 @@ def create_data_dict(dataset_path: str, sample_rate: int = 22050) -> dict:
     featurizer = torchaudio.transforms.Spectrogram(
         n_fft=1024, win_length=1024, hop_length=512, center=True
     )
-    for i, (dirpath, dirnames, filenames) in enumerate(os.walk(dataset_path)):
+    for idx, (dirpath, dirnames, filenames) in enumerate(os.walk(dataset_path)):
         if dirpath is not dataset_path:
             dirpath_comp = dirpath.split("/")
             semantic_label = dirpath_comp[-1]
@@ -106,9 +106,9 @@ def create_data_dict(dataset_path: str, sample_rate: int = 22050) -> dict:
                     audio = torch.Tensor(audio[: sample_rate * 10])
                     spec = torch.log(featurizer(audio)).clamp(1e-6)
                     data["spec"].append(spec)
-                    data["labels"].append(i - 1)
+                    data["labels"].append(idx - 1)
     transform = transforms.Compose([transforms.Resize((100, 100))])
-    for i in range(len(data["spec"])):
-        data["spec"][i] = transform(data["spec"][i].unsqueeze(0))
+    for spec in range(len(data["spec"])):
+        data["spec"][spec] = transform(data["spec"][spec].unsqueeze(0))
 
     return data
